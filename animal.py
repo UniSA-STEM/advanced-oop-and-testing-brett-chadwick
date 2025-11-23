@@ -1,8 +1,8 @@
 '''
-File: filename.py
+File: animal.py
 Description: A brief description of this Python module.
-Author: Billy Bizilis
-ID: 110100110
-Username: bizvy001
+Author: Brett Chadwick
+ID: 110407073
+Username: chabx001
 This is my own work as defined by the University's Academic Integrity Policy.
 ''
