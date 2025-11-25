@@ -8,8 +8,16 @@ This is my own work as defined by the University's Academic Integrity Policy.
 '''
 import staff
 class Zookeeper(staff):
+
+    """
+    Feeds animal class returns fed variable.
+    """
     def feed_animal(self,isFed ):
         return isFed == True
+    """
+    cleans animal enclosure returns confirmation variable.
+    Will do something more potentially?
+    """
     def clean_enclosure(self, clean):
         return clean == True
 
