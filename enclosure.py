@@ -7,7 +7,7 @@ ID: 110407073
 Username: chabx001
 This is my own work as defined by the University's Academic Integrity Policy.
 '''
-class Enclosure:
+class Enclosure(ABC):
     def __init__(self, size, environment_type, cleanliness, animal_type, animal_list=[]):
         self.size = size
         self.environment_type = environment_type

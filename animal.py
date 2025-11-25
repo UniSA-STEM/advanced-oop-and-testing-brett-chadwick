@@ -8,7 +8,9 @@ ID: 110407073
 Username: chabx001
 This is my own work as defined by the University's Academic Integrity Policy.
 '''
-class Animal:
+
+
+class Animal(ABC):
     def __init__(self, name, species, diet, category):
         self.name = name
         self.species = species
@@ -18,8 +20,15 @@ class Animal:
     @abstractmethod
     def make_noise(self):
         pass
+
+    @abstractmethod
     def eat_food(self):
         pass
+
+    @abstractmethod
     def sleep(self):
         pass
+
+
+
 
