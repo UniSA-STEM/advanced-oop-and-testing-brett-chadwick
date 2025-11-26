@@ -11,5 +11,5 @@ class Vet(staff):
     def __init__(self,staffID, name, job, responsibilities):
         super().__init__(staffID, name, job, responsibilities)
 
-    def conduct_health_check(self, health_check):
+    def conduct_health_check(self, health_check, animal):
         return health_check == True

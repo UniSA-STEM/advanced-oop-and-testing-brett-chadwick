@@ -11,8 +11,8 @@ class Reptile(Animal):
     """
     Initialization method, used to
     """
-    def __init__(self, name, species, diet, hunger,rested,cold_blooded = True, category = "Reptile"):
-        super().__init__(name, species, diet, hunger, rested , category)
+    def __init__(self, name, species, diet, hunger,rested,status ,cold_blooded = True, category = "Reptile"):
+        super().__init__(name, species, diet, hunger, status, rested , category)
         self.cold_blooded = cold_blooded
 
 
