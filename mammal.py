@@ -11,13 +11,12 @@ class Mammal(Animal):
     """
     Initialization method, used to hardcode animaltype to avoid conflicts with other
     """
-    def __init__(self, name, species, diet, hunger, rested = True, category = "Mammal"):
-        super().__init__(name, species, diet, hunger, rested, category)
+    def __init__(self, name, species, diet, hunger,isHungry = False, rested = True, category = "Mammal", behavioural_issues=("tiredness",'injured',"ill")):
+        super().__init__(name, species, diet, hunger, rested, category, isHungry)
+        self.behavioural_issues = behavioural_issues
+        y
 
         # name
-
-
-
     def set_hunger(self):
         return self.hunger == 100
     def make_noise(self):

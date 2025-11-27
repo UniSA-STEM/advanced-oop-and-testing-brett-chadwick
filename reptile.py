@@ -11,8 +11,8 @@ class Reptile(Animal):
     """
     Initialization method, used to
     """
-    def __init__(self, name, species, diet, hunger,rested,status ,cold_blooded = True, category = "Reptile"):
-        super().__init__(name, species, diet, hunger, status, rested , category)
+    def __init__(self,animalID, name, species, diet, category, hunger, status ,cold_blooded, isHungry, rested=True,):
+        super().__init__(animalID, name, species, diet, category, hunger, status , isHungry, rested,)
         self.cold_blooded = cold_blooded
 
 
@@ -24,6 +24,10 @@ class Reptile(Animal):
 
     def sleep(self):
         return self.rested == True
+
+    def hangry(self):
+        if hunger < 30:
+            return
 
     """
     str method to get and read 

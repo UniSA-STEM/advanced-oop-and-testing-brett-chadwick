@@ -11,7 +11,8 @@ This is my own work as defined by the University's Academic Integrity Policy.
 
 
 class Animal(ABC):
-    def __init__(self, name, species, diet, category, hunger, rested,status):
+    def __init__(self,animalID, name, species, diet, category, hunger, status , isHungry, rested=True,):
+        self.animalID = animalID
         self.name = name
         self.species = species
         self.diet = diet
@@ -19,9 +20,7 @@ class Animal(ABC):
         self.hunger = hunger
         self.rested = rested
         self.status = status
-
-
-
+        self.isHungry = isHungry
     def get_name(self):
         return self._name
 
@@ -68,6 +67,12 @@ class Animal(ABC):
     @abstractmethod
     def sleep(self):
         pass
+
+    @abstractmethod
+    def hangry(self):
+        if self.isHungry == True:
+            pass
+
 
     def __str__(self):
         print (f"Name: {self.name}, Species: {self.species}, Diet: {self.diet}, Category: {self.category}, Hunger: {self.hunger}, Rested: {self.rested}, status: {self.status}")
