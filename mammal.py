@@ -14,7 +14,7 @@ class Mammal(Animal):
     def __init__(self, name, species, diet, hunger,isHungry = False, rested = True, category = "Mammal", behavioural_issues=("tiredness",'injured',"ill")):
         super().__init__(name, species, diet, hunger, rested, category, isHungry)
         self.behavioural_issues = behavioural_issues
-        y
+
 
         # name
     def set_hunger(self):

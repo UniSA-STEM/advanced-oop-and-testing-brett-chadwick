@@ -11,7 +11,7 @@ class Reptile(Animal):
     """
     Initialization method, used to
     """
-    def __init__(self,animalID, name, species, diet, category, hunger, status ,cold_blooded, isHungry, rested=True,):
+    def __init__(self,animalID, name, species, diet, category, hunger, status ,cold_blooded=True, isHungry=False, rested=True,):
         super().__init__(animalID, name, species, diet, category, hunger, status , isHungry, rested,)
         self.cold_blooded = cold_blooded
 
@@ -26,18 +26,17 @@ class Reptile(Animal):
         return self.rested == True
 
     def hangry(self):
-        if hunger < 30:
+        if self.hunger < 30:
             return
 
     """
     str method to get and read 
     """
     def __str__(self):
-        print(f"Name: {self.name}, Species: {self.species}, Diet: {self.diet}, Category: {self.category}, Hunger: {self.hunger}, Rested: {self.rested}, Cold Blooded: {self.cold_blooded}")
+        print(f" Animal ID: {self.animalID} Name: {self.name}, Species: {self.species}, Diet: {self.diet}, Category: {self.category}, Hunger: {self.hunger}, Rested: {self.rested}"
+              f", Cold Blooded: {self.cold_blooded} ,Status:{self.status} Is hungry: {self.isHungry}")
 
 
-test = Reptile("Greg", 'Lizard', 'herbivore', hunger=75, rested=True)
-test.make_noise()
-print(test.__str__())
+
 
 

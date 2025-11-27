@@ -37,18 +37,15 @@ class Enclosure(ABC):
     def set_cleanliness(self, value):
         self.cleanliness = value
 
-
-    def get_allowed_animal_type(self):
-        return self.allowed_animal_type
-
-    def set_allowed_animal_type(self, bool):
-        self.allowed_animal_type = bool
-
     def get_animal_list(self):
         return self.enc_animal_list
     # gets new animal added to enclosure and adds to list.
+
+    #animal_addition = animal.Animal()
+    #if animal_addition.si ==:
+    @abstractmethod
     def add_animal_enc(self,animal):
-        self.enc_animal_list = animal + self.enc_animal_list
+     pass
 
 
 

@@ -21,12 +21,7 @@ class Manager:
     #Adds Staff member to Staff list
     def add_staff(self, staff_member):
         self.staff_list.append(staff_member)
-
-    def added_animal(self, enclosure, animal):
-        enclosure.add_animal_enc()
-
-
-    def set_animal_hunger(self, animal, hunger):
+    def set_animal_hungery_State(self, animal, hunger):
         if hunger<70:
             animal.set_hunger(True)
         else:
